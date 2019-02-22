@@ -1,4 +1,7 @@
 {
   "name": "md-links",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "devDependencies": {
+    "melyhc-md-links": "^1.0.7"
+  }
 }
