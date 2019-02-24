@@ -3,5 +3,10 @@
   "version": "0.1.0",
   "devDependencies": {
     "melyhc-md-links": "^1.0.7"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "markdown-link-extractor": "^1.2.0",
+    "markdown-links-nwc": "^1.1.5"
   }
 }
