@@ -8,7 +8,7 @@
 //   });
 
 // });
-const App = require('../app.js');
+const index = require('../index.js');
 
 describe('Leer un directorio', () => {
     //Así se testea algo con promesas
