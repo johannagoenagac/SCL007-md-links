@@ -1,3 +1,4 @@
+#!/usr/bin/env node 
 const mdLinks = require("./module.js")
 const pathLinks = process.argv[2]
 const options = process.argv[3]

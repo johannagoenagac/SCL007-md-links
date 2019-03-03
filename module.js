@@ -44,12 +44,12 @@ const mdLinks = (pathLinks, options) => {
                         return objectLinks
 
                     } else {
-                        const objectLinks = {
+                        const objectLink = {
                             href: res.url,
                             text: text,
                             path: routeMd,
                         }
-                        return objectLinks
+                        return objectLink
                     }
                 })
 
@@ -71,42 +71,22 @@ const mdLinks = (pathLinks, options) => {
         return (Promise.all(repeat.map(element => {
             let arrayInfo = path.join(pathLinks, element)
             return mdLinks(arrayInfo)
-        }))).then(arrRes =>{
-            return Promise.resolve(arrRes.forEach(element=>{
-                console.log(element)
-                // let finalResult=[]
-                // let finalArray=finalResult.concat(element);
-                // return(finalArray)
-                // let arrayPromise = element.concat;
-                // return arrayPromise
-            }))
+        }))).then(arrRes => {
+            let sum = [];
+            arrRes.forEach(element => {
+                sum = sum.concat(element)
+
+            })
+            return sum;
         }
-            )
-        
-        // .then(arrRes => {
-        //     // return Promise.resolve(arrRes.reduce((a, b) => {
-        //         let arrayPromise = arrRes.concat;
-        //         //return arrayPromise;
-        //         console.log(arrayPromise);
+        )
 
-        //     // }))
 
-        // })
+    } else {
+        console.log("error, este no es un arcivo .md")
+    }
+
 
 }
-
-// else{
-//            console.log("error, debe ingresar un archivo .md")
-//         }
-        
-
-}
-
-
-
-
-
 
 module.exports = mdLinks;
-
-
