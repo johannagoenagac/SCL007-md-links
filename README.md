@@ -1,6 +1,6 @@
 # Markdown Links
 
-##Sobre mdLinks
+## Sobre mdLinks
 
 Este modulo esta hecho para extraer los links de un archivo .md y validarlos.
 
@@ -10,6 +10,7 @@ Versión
 0.1.0
 
 Instalación
+
 npm install https://github.com/johannagoenagac/SCL007-md-links
 
 -Línea de comando

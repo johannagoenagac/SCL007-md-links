@@ -83,7 +83,7 @@ const mdLinks = (pathLinks, options) => {
 
 
     } else {
-        console.log("error, este no es un arcivo .md")
+        console.log("error, este no es un archivo .md")
     }
 
 
